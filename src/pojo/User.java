@@ -10,6 +10,15 @@ public class User {
     String stauts;
     String describe;
     String classid;
+    String endLoginTime;
+
+    public String getEndLoginTime() {
+        return endLoginTime;
+    }
+
+    public void setEndLoginTime(String endLoginTime) {
+        this.endLoginTime = endLoginTime;
+    }
 
     public String getPassword() {
         return password;
