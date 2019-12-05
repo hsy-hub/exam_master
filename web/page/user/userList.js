@@ -8,7 +8,7 @@ layui.use(['form','layer','table','laytpl'],function(){
     //用户列表
     var tableIns = table.render({
         elem: '#userList',
-        url : '../../json/userList.json',
+        url : '/ssm/userList.action',
         cellMinWidth : 95,
         page : true,
         height : "full-125",
@@ -17,24 +17,32 @@ layui.use(['form','layer','table','laytpl'],function(){
         id : "userListTable",
         cols : [[
             {type: "checkbox", fixed:"left", width:50},
-            {field: 'userName', title: '用户名', minWidth:100, align:"center"},
-            {field: 'userEmail', title: '用户邮箱', minWidth:200, align:'center',templet:function(d){
-                return '<a class="layui-blue" href="mailto:'+d.userEmail+'">'+d.userEmail+'</a>';
+            {field: 'loginName', title: '用户名', minWidth:100, align:"center"},
+            {field: 'email', title: '用户邮箱', minWidth:200, align:'center',templet:function(d){
+                return '<a class="layui-blue" href="mailto:'+d.email+'">'+d.email+'</a>';
             }},
-            {field: 'userSex', title: '用户性别', align:'center'},
-            {field: 'userStatus', title: '用户状态',  align:'center',templet:function(d){
-                return d.userStatus == "0" ? "正常使用" : "限制使用";
+            {field: 'gender', title: '用户性别', align:'center',templet:function (d) {
+                    if(d.gender == "1"){
+                        return "男";
+                    }else if(d.gender == "2"){
+                        return "女";
+                    }else if(d.gender == "3"){
+                        return "保密";
+                    }
+                }},
+            {field: 'stauts', title: '用户状态',  align:'center',templet:function(d){
+                return d.stauts == "1" ? "正常使用" : "限制使用";
             }},
-            {field: 'userGrade', title: '用户等级', align:'center',templet:function(d){
-                if(d.userGrade == "1"){
+            {field: 'level', title: '用户等级', align:'center',templet:function(d){
+                if(d.level == "1"){
                     return "管理员";
-                }else if(d.userGrade == "2"){
+                }else if(d.level == "2"){
                     return "教师";
-                }else if(d.userGrade == "3"){
+                }else if(d.level == "3"){
                     return "学生";
                 }
             }},
-            {field: 'userEndTime', title: '最后登录时间', align:'center',minWidth:150},
+            {field: 'endLoginTime', title: '最后登录时间', align:'center',minWidth:150},
             {title: '操作', minWidth:175, templet:'#userListBar',fixed:"right",align:"center"}
         ]]
     });

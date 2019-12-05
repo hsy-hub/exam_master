@@ -9,4 +9,11 @@
         <include refid="sql"/> where loginName=#{loginName} and password=#{password}
     </select>
 
+    <select id="getUserList"  resultType="User" parameterType="user">
+        <include refid="sql"/> limit #{pagestart},#{size}
+    </select>
+
+    <select id="userCount" resultType="integer">
+        select count(*) from user
+    </select>
 </mapper>
