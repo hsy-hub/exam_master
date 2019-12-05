@@ -1,0 +1,12 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.UserMapper">
+    <sql id="sql">
+        select * from user
+    </sql>
+    <select id="login" parameterType="user" resultType="User">
+        <include refid="sql"/> where loginName=#{loginName} and password=#{password}
+    </select>
+
+</mapper>
