@@ -10,7 +10,13 @@
     </select>
 
     <select id="getUserList"  resultType="User" parameterType="user">
-        <include refid="sql"/> limit #{pagestart},#{size}
+        <include refid="sql"/>
+        <!--<where>-->
+            <!--<if test="loginName != null and loginName != ''">-->
+                <!--and name like '%${loginName}%'-->
+            <!--</if>-->
+        <!--</where>-->
+--         limit #{pagestart},#{size}
     </select>
 
     <select id="userCount" resultType="integer">

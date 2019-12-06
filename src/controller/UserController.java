@@ -41,14 +41,11 @@ public class UserController {
     @RequestMapping("/userList.action")
     @ResponseBody       //加上 @ResponseBody 后，会直接返回 json 数据
     public Map<String, Object> userList(int page, int limit) {
-
-//        return Tool.testLayui(userList, 0, 0);
-        HashMap<String, Object> map = new HashMap<>();
-        int pagestart = (page - 1) * limit;
-        map.put("pagestart", pagestart);
-        map.put("size", limit);
-//        map.put("name", user.getName());//查询条件
-//        map.put("address", user.getAddress());
+//        HashMap<String, Object> map = new HashMap<>();
+//        int pagestart = (page - 1) * limit;
+//        map.put("pagestart", pagestart);
+//        map.put("size", limit);
+//        map.put("loginName", user.getLoginName());//查询条件
         List<User> userList = userDao.getUserList();
         Integer pagecount = userDao.userCount();
         Map<String, Object> returnTable = Tool.testLayui(userList, page, limit);
