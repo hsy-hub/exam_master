@@ -1,0 +1,61 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="exam:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/exam_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="exam" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="E:/servlet-jar/all/aopalliance-1.0(1).jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/asm-3.3.1.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/aspectjweaver-1.6.11.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/cglib-2.2.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-beanutils-1.9.3.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-collections-3.2.1.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-dbcp-1.2.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-fileupload-1.2.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-io-2.4.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-lang-2.6.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/commons-pool-1.3.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/ezmorph-1.0.6.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/jackson-annotations-2.4.0.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/jackson-core-2.4.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/jackson-databind-2.4.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/javassist-3.17.1-GA.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/json-20070829.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/json-lib-2.1-jdk13.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/jsqlparser-0.9.5.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/jstl-1.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/junit-4.9.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/log4j-1.2.17.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/log4j-api-2.0-rc1.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/log4j-core-2.0-rc1.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/mybatis-3.2.7.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/mybatis-spring-1.2.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/mysql-connector-java-5.1.7-bin.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/pagehelper-5.1.2.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/slf4j-api-1.7.5.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/slf4j-log4j12-1.7.5.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-aop-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-aspects-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-beans-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-context-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-context-support-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-core-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-expression-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-jdbc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-jms-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-messaging-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-tx-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-web-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/spring-webmvc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="E:/servlet-jar/all/standard.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="exam/web/Web" />
+    </root>
+  </artifact>
+</component>
